@@ -1,0 +1,26 @@
+.About {
+    text-align: center;
+}
+.PC {
+    text-align: left;
+}
+.Icon {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.Medics foto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+}
+
+.Prevention {
+    text-align: right;
+
+}
