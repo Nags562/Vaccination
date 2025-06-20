@@ -4,67 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmony Clinic - HPV Vaccination</title>
-    <!-- Add your CSS links here -->
-     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="./css/reset.css" />
+     <link rel="stylesheet" href="./css/variables.css" />
+     <link rel="stylesheet" href="./css/fonts.css" />
+     <link rel="stylesheet" href="./css/base.css" />
+     <link rel="stylesheet" href="./css/main.css" />
+
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="desktop-nav">
-                <a href="#home">Home</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#doctors">Our Doctors</a>
-                <a href="#home" class="logo">
-                    <span></span>
-                    <span>Harmony Clinic</span>
-                </a>
-                <button class="btn book-appointment-btn">
-                    Book an appointment
-                </button>
-            </nav>
+<!-- Header Section -->
+<header>
+  <div class="container">
+      <!-- Mobile Logo (Always on left) -->
+      <a href="#hero" class="logo mobile-logo">
+          <span></span>
+          <span>Harmony Clinic</span>
+      </a>
 
-            <button id="mobile-menu-button" class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+          <!-- Nav Links Group (Left) -->
+          <div class="nav-links-group">
+              <a href="#hero">Home</a>
+              <a href="#how-it-works">How It Works</a>
+              <a href="#doctors">Our Doctors</a>
+              <a href="#vaccines">Vaccines</a>
+              <a href="#faqs">FAQ</a>
+          </div>
 
-        <nav id="mobile-menu-overlay" class="mobile-menu-overlay">
-            <a href="#home" data-close-menu>Home</a>
-            <a href="#how-it-works" data-close-menu>How It Works</a>
-            <a href="#doctors" data-close-menu>Our Doctors</a>
-            <a href="#vaccines" data-close-menu>Vaccines</a>
-            <a href="#faqs" data-close-menu>FAQs</a>
-            <button class="btn book-appointment-btn" data-close-menu>
-                Book an appointment
-            </button>
-        </nav>
-    </header>
+          <!-- Desktop Logo (Center) -->
+          <a href="#hero" class="logo desktop-logo">
+              <span></span>
+              <span>Harmony Clinic</span>
+          </a>
 
-    <main>
-        <!--sections assigned -->
-        <section id="home" class="hero-section">
-            <!-- Octa Home section -->
-        </section>
+          <!-- Book Appointment Button (Right) -->
+          <button class="btn book-appointment-btn desktop-header-btn">
+              Book an appointment
+          </button>
+      </nav>
 
-        <section id="how-it-works" class="steps-section">
-            <!-- Octa How It Works section -->
-        </section>
+      <!-- Mobile Hamburger Menu Button (Always on right) -->
+      <button id="mobile-menu-button" class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+  </div>
 
-        <section id="doctors" class="doctors-section">
-            <!-- Octa Doctors section -->
-        </section>
-
-        <section id="vaccines" class="vaccines-section">
-            <!-- Prisca Vaccines section -->
-        </section>
-
-        <section id="faqs" class="faq-section">
-            <!-- Kevina FAQs section -->
-        </section>
-    </main>
-
-    <!-- Add your JavaScript links here -->
+  <!-- Mobile Navigation Overlay -->
+  <nav id="mobile-menu-overlay" class="mobile-menu-overlay">
+      <a href="#hero" data-close-menu>Home</a>
+      <a href="#how-it-works" data-close-menu>How It Works</a>
+      <a href="#doctors" data-close-menu>Our Doctors</a>
+      <a href="#vaccines" data-close-menu>Vaccines</a>
+      <a href="#faqs" data-close-menu>FAQ</a>
+      <button class="btn book-appointment-btn" data-close-menu>
+          Book an appointment
+      </button>
+  </nav>
+</header>
 </body>
 </html>

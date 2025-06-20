@@ -1,0 +1,32 @@
+/* base.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--concrete);
+    color: var(--dune);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 4rem;
+    }
+}
+
+.section-padding {
+    padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-padding {
+        padding: 6rem 4rem;
+    }
+}

@@ -1,20 +1,22 @@
-:root {
     /* Colors */
-    --primary-white:#FFFFFF ;
-    --secondary-concrete: #3B3434;
-    --secondary-dune: #F1F1F1;
-    --accent-light-coral: #EF6B6E;
-  
+/* variables.css */
+:root {
+    --light-coral: #EF686E;
+    --dune: #3B3434;
+    --concrete: #F1F1F1;
+    --white: #FFFFFF;
+    --gray-600: #4a5568;
+    --gray-400: #a1a1aa;
+    --rose-100: #fecaca;
+}
 
     /* Additional Colors */
     /* Status colors */
     /* Background colors */
 
 
-    /* Typography */
-    --font-urbanist: 
-    --font-test-calibre: 
-
-
-    
-}
+    /* Typography
+        --font-urbanist: ;
+    --font-test-calibre: ;
+    */
+/* variables.css */
