@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Test Calibre';
+    src: url('../assets/fonts/TestCalibre-Thin-BF661746edb928b.otf') format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url('../assets/fonts/TestCalibre-ThinItalic-BF661746edc3fda.otf') format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url('../assets/fonts/TestCalibre-Light-BF661746edb619a.otf') format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url('../assets/fonts/TestCalibre-LightItalic-BF661746edc3c43.otf') format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url('../assets/fonts/TestCalibre-Regular-BF661746edbee52.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url("../assets/fonts/TestCalibre-RegularItalic-BF661746edb584e.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
