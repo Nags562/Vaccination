@@ -1,0 +1,320 @@
+/* Header */
+.header {
+    background-color: var(--color-white);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-concrete);
+    position: relative; /* For burger menu positioning */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between; /* Logo left, Burger right on mobile */
+    align-items: center;
+}
+
+/* Mobile Header Elements */
+.header-mobile-left {
+    display: flex; /* Show on mobile */
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-calibre);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-light-coral);
+}
+
+.header .logo img {
+    height: 30px; /* Adjust size */
+    margin-right: 5px;
+}
+
+/* Mobile Navigation (Burger Menu) */
+.main-nav .nav-links {
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9; /* Below burger icon */
+    padding: var(--spacing-md) 0;
+    border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+    transform: translateY(-10px); /* Small offset for animation */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav .nav-links.active {
+    display: flex; /* Show when active */
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.main-nav .nav-links li {
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: center;
+    border-bottom: 1px solid var(--color-concrete); /* Separator */
+}
+
+.main-nav .nav-links li:last-child {
+    border-bottom: none;
+}
+
+.main-nav .nav-links a {
+    display: block; /* Make links fill li */
+    width: 100%;
+}
+
+.nav-contact-info-mobile {
+    display: flex; /* Show on mobile inside menu */
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md); /* Space from nav links */
+}
+.nav-contact-info-mobile span {
+    color: var(--color-gray-text);
+    font-size: 0.9rem;
+}
+.nav-contact-info-mobile .btn {
+    padding: var(--spacing-xs) var(--spacing-md); /* Smaller button for mobile menu */
+    width: 80%; /* Fit within mobile menu */
+}
+
+
+/* Desktop Header Elements - Initially Hidden on Mobile */
+.header-desktop-center,
+.header-desktop-right {
+    display: none;
+}
+
+.burger-menu-icon {
+    display: flex; /* Show on mobile */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.burger-menu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-light-coral);
+    transition: all 0.3s ease;
+}
+
+.burger-menu-icon.open span:nth-child(1) { 
+    transform: translateY(9px) rotate(45deg); 
+}
+.burger-menu-icon.open span:nth-child(2) { 
+    opacity: 0; /* Hide middle line when open */
+}
+.burger-menu-icon.open span:nth-child(3) { 
+    transform: translateY(-9px) rotate(-45deg); 
+}
+
+/* --- Desktop Media Queries --- */
+@media (min-width: 768px) {
+    /* Header - Desktop Layout */
+    .header .container {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; 
+        align-items: center; 
+        gap: var(--spacing-md);
+    }
+
+    /* Hide mobile-specific header elements */
+    .header-mobile-left {
+        display: none;
+    }
+
+    /* Desktop Navigation (Left side) */
+    .main-nav {
+        grid-column: 1 / 2; /* Place in the first column */
+        justify-self: start; /* Align to the start (left) of the column */
+    }
+    .main-nav .nav-links {
+        display: flex; 
+        position: static; /* Remove absolute positioning from mobile */
+        flex-direction: row;
+        box-shadow: none; /* Remove box shadow from mobile menu */
+        padding: 0;
+        border-radius: 0;
+        transform: none;
+        opacity: 1;
+        gap: 10px; 
+    }
+    .main-nav .nav-links li {
+        padding: 0;
+        border-bottom: none; 
+    }
+    .main-nav .nav-links a {
+        color: var(--color-dune); 
+        font-weight: 500;
+        font-size: 12px;
+        transition: color 0.2s ease;
+    }
+    .main-nav .nav-links a:hover {
+        color: var(--color-light-coral); 
+    }
+    .nav-contact-info-mobile {
+        display: none; /* Hide mobile-specific contact info */
+    }
+
+    /* Desktop Logo (Center) */
+    .header-desktop-center {
+        display: flex;
+        justify-content: center; /* Center the logo horizontally within its column */
+        grid-column: 2 / 3; /* Place in the second (middle) column */
+    }
+    .header .logo img {
+        height: 40px; 
+    }
+    .header .logo span {
+        font-size: 1rem; 
+    }
+
+    /* Desktop Contact Info & Button (Right side) */
+    .header-desktop-right {
+        display: flex;
+        grid-column: 3 / 4; /* Place in the third column */
+        justify-self: end; /* Align to the end (right) of the column */
+    }
+    .header .contact-info {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm); 
+    }
+    .header .contact-info span {
+        color: var(--color-dune); 
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap; /* Prevent phone number from wrapping */
+    }
+    .header .contact-info .icon-phone {
+        font-size: 1.1rem;
+        color: var(--color-light-coral); 
+    }
+    .header .contact-info .btn {
+        padding: var(--spacing-xs) var(--spacing-md); 
+        font-size: 12px;
+        background-color: var(--color-concrete);
+        color: var(--color-light-coral);
+        border-color: var(--color-light-coral);
+    }
+
+    /* Hide the burger menu icon on desktop */
+    .burger-menu-icon {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    position: relative;
+}
+h1{
+    color: var(--color-light-coral);
+    text-align: center; 
+    font-size: 2.5rem; 
+    line-height: 1.2;
+}
+.highlight-line-one {
+    color: var(--color-dune); 
+}
+
+.highlight-line-two {
+    color: var(--color-light-coral); 
+}
+
+.hero-description {
+    color: var(--color-gray-text);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--spacing-xl);
+}
+
+.main-hero-image-container {
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.main-hero-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-overlay-content {
+    position: absolute;
+    bottom: 0; /* Align to the very bottom */
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-sm) var(--spacing-md);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    font-size: 0.6rem; 
+    color: var(--color-dune);
+    text-align: left;
+    border-radius: 20px;
+    width: fit-content; 
+    min-width: 150px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.image-overlay-content p {
+    margin-bottom: var(--spacing-xs); 
+    font-size: 15px; 
+    line-height: 1.2; 
+}
+
+.testimonial-avatars {
+    display: flex;
+    gap: -8px; 
+    position: relative;
+    margin-bottom: var(--spacing-xs); 
+}
+
+.testimonial-avatars img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative; /* For z-index */
+}
+
+/* z-index for overlapping avatars */
+.testimonial-avatars img:nth-child(1) { z-index: 4; }
+.testimonial-avatars img:nth-child(2) { z-index: 3; }
+.testimonial-avatars img:nth-child(3) { z-index: 2; }
+.testimonial-avatars img:nth-child(4) { z-index: 1; }
+
+.cta-btn-image {
+    position: relative;
+    bottom: var(--spacing-md);
+    transform: translateX(-50%);
+    left: 50%;
+    min-width: 350px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}

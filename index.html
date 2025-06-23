@@ -3,66 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony Clinic - HPV Vaccination</title>
-     <link rel="stylesheet" href="./css/reset.css" />
-     <link rel="stylesheet" href="./css/variables.css" />
-     <link rel="stylesheet" href="./css/fonts.css" />
-     <link rel="stylesheet" href="./css/base.css" />
-     <link rel="stylesheet" href="./css/main.css" />
-
-</head>
+    <title>Harmony Clinic - HPV Vaccination Initiative</title>
+    <link rel="stylesheet" href="./css/main.css">
 <body>
-<!-- Header Section -->
-<header>
-  <div class="container">
-      <!-- Mobile Logo (Always on left) -->
-      <a href="#hero" class="logo mobile-logo">
-          <span></span>
-          <span>Harmony Clinic</span>
-      </a>
+    <header class="header">
+        <div class="container">
+            <div class="header-mobile-left">
+                <div class="logo">
+                    <span> &#9733; Harmony Clinic</span>
+                </div>
+            </div>
 
-      <!-- Desktop Navigation -->
-      <nav class="desktop-nav">
-          <!-- Nav Links Group (Left) -->
-          <div class="nav-links-group">
-              <a href="#hero">Home</a>
-              <a href="#how-it-works">How It Works</a>
-              <a href="#doctors">Our Doctors</a>
-              <a href="#vaccines">Vaccines</a>
-              <a href="#faqs">FAQ</a>
-          </div>
+            <nav class="main-nav">
+                <button class="burger-menu-icon" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Vaccines</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li class="nav-contact-info-mobile">
+                        <span><i class="icon-phone"></i> +(256) 78123193</span>
+                        <button class="btn btn-primary">Book an appointment</button>
+                    </li>
+                </ul>
+            </nav>
 
-          <!-- Desktop Logo (Center) -->
-          <a href="#hero" class="logo desktop-logo">
-              <span></span>
-              <span>Harmony Clinic</span>
-          </a>
+            <div class="header-desktop-center">
+                <div class="logo">
+                    <span> &#9733; Harmony Clinic</span>
+                </div>
+            </div>
+            <div class="header-desktop-right">
+                <div class="contact-info">
+                    <span><i class="icon-phone"></i> +(256) 78123193</span>
+                    <button class="btn btn-primary">Book an appointment</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-          <!-- Book Appointment Button (Right) -->
-          <button class="btn book-appointment-btn desktop-header-btn">
-              Book an appointment
-          </button>
-      </nav>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>
+                    HPV Vaccination  
+                    <span class="highlight-line-one">Initiative – <br> Your Step Toward <br> a </span>
+                    <span class="highlight-line-two"> Healthier Future</span>
+                </h1>
+                <p class="hero-description">The HPV vaccine is a safe and effective way to prevent certain types of cancer before they start. Protect yourself and the people you care about—because prevention is power</p>
 
-      <!-- Mobile Hamburger Menu Button (Always on right) -->
-      <button id="mobile-menu-button" class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-  </div>
+                <div class="main-hero-image-container">
+                    <img src="https://img.freepik.com/free-photo/beautiful-stylish-woman-with-protea-flower-concept-style-femininity_169016-59503.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Woman with flowers">
+                    <div class="image-overlay-content">
+                        <div class="testimonial-avatars">
+                            <img src="https://img.freepik.com/premium-photo/face-woman-smelling-rose-studio-background-valentines-day-fragrance-model-profile-young-indian-girl-with-flower-hand-romance-scent-love-pink-backdrop_590464-203119.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                            <img src="https://img.freepik.com/premium-photo/close-up-woman-holding-flower_1048944-12976293.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                            <img src="https://img.freepik.com/premium-photo/close-up-portrait-woman-with-pink-flower-bouquet_1048944-30598487.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                            <img src="https://img.freepik.com/free-photo/attractive-ethnic-woman-covering-eye-with-flower_23-2148105349.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                        </div>
+                        <p>More than 1,000 <br> women trust us.</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary cta-btn-image">Book an appointment</button>
+            </div>
+        </section>
 
-  <!-- Mobile Navigation Overlay -->
-  <nav id="mobile-menu-overlay" class="mobile-menu-overlay">
-      <a href="#hero" data-close-menu>Home</a>
-      <a href="#how-it-works" data-close-menu>How It Works</a>
-      <a href="#doctors" data-close-menu>Our Doctors</a>
-      <a href="#vaccines" data-close-menu>Vaccines</a>
-      <a href="#faqs" data-close-menu>FAQ</a>
-      <button class="btn book-appointment-btn" data-close-menu>
-          Book an appointment
-      </button>
-  </nav>
-</header>
+    </main>
+    <script src="./js/home.js"></script>
 </body>
 </html>

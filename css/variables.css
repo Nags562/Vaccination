@@ -1,15 +1,30 @@
     /* Colors */
 /* variables.css */
 :root {
-    --light-coral: #EF686E;
-    --dune: #3B3434;
-    --concrete: #F1F1F1;
-    --white: #FFFFFF;
-    --gray-600: #4a5568;
-    --gray-400: #a1a1aa;
-    --rose-100: #fecaca;
-}
+    /* Colors */
+    --color-light-coral: #FF6B6B; /* Based on the button and highlight color */
+    --color-dune: #3E3E3E; /* Dark text color */
+    --color-concrete: #F2F2F2; /* Light background for cards/sections */
+    --color-white: #FFFFFF;
+    --color-gray-text: #888888; /* Lighter text for descriptions */
+    --color-dark-gray: #555555; /* For headings, slightly lighter than dune */
+    --color-accent-pink: #FFC0CB; /* For decorative elements like the stars */
 
+    /* Fonts */
+    --font-calibre: 'Test Calibre', sans-serif; /* Assuming 'Test Calibre' is the font name */
+    --font-urbanist: 'Urbanist', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.2rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Border Radius */
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+}
     /* Additional Colors */
     /* Status colors */
     /* Background colors */
