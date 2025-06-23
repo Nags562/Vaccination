@@ -1,14 +1,32 @@
-/* CSS Resets */
-/* Box sizing */
-*,
-*::before,
-*::after {
+/* Basic CSS Reset */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* Remove default margin and padding */
-* {
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
 }
 
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* Further resets */

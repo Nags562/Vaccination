@@ -1,0 +1,69 @@
+/* Flexbox Utilities */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Margin/Padding Utilities */
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Visibility Utilities */
+.d-none {
+    display: none;
+}
+
+/* Example pseudo-element for decorative stars */
+.step-card .step-number::after {
+    content: '⭐'; /* Or a background image of a star */
+    margin-left: 5px;
+    font-size: 0.8em;
+    color: var(--color-accent-pink);
+}
+
+/* Pseudo-elements for design details from the image, box */
+.hero-section::before {
+    position: absolute;
+    top: 100px; /* positioning */
+    right: 20px;
+    background-color: var(--color-concrete);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+    color: var(--color-gray-text);
+    /* Initially hidden on mobile, shown on desktop */
+    display: none;
+}
+
+/* multiple cards have similar shadow effects or borders. */
+.card-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-corners {
+    border-radius: var(--border-radius-md);
+}
+
+/* Media Query to show on desktop */
+@media (min-width: 1024px) {
+    .hero-section::before {
+        display: block;
+    }
+}
