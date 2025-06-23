@@ -40,5 +40,58 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Test Calibre';
+    src: url("../assets/fonts/TestCalibre-Semibold-BF661746ed9242e.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Test calibre';
+    src: url("../assets/fonts/TestCalibre-SemiboldItalic-BF661746ed84cd9.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
 
+@font-face {
+    font-family: 'Test Calibre';
+    src: url("../assets/fonts/TestCalibre-Bold-BF661746edb6c3f.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url("../assets/fonts/TestCalibre-BoldItalic-BF661746edb6c3f.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url("../assets/fonts/TestCalibre-Black-BF661746ec9d64f.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Calibre';
+    src: url("../assets/fonts/TestCalibre-BlackItalic-BF661746ec9d64f.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Test calibre';
+    src: url("../assets/fonts/TestCalibre-Medium-BF661746ed8cff9.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Test calibre';
+    src: url("../assets/fonts/TestCalibre-MediumItalic-BF661746ed8cff9.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
