@@ -1,26 +1,45 @@
-.About {
-    text-align: center;
+body {
+  font-size: 14px;
+  padding: 10px;
 }
-.PC {
-    text-align: left;
-}
-.Icon {
-    width: 40px;
-    height: auto;
-    display: block;
-    margin-top: 10px;
-    
+p {
+    line-height: 1.4;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.About {
+  text-align: center;
+
+}
+
+.PC {
+  text-align: left;
+}
+
+.Icon {
+  width: 20px;
+  height: auto;
+  display: block;
+  margin-top: 10px auto;
+
+}
+
+
 .Medics foto {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: auto;
+  /*width: 30px;
+  height: auto;
+  border-radius: 10px;*/
+  max-width: 150px;
+  flex: 1;
+  margin: 0 10px;
+
+
 }
 
 .Prevention {
-    text-align: right;
-
+  text-align: right;
 }
