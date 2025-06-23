@@ -209,7 +209,6 @@
         font-size: 12px;
         background-color: var(--color-concrete);
         color: var(--color-light-coral);
-        border-color: var(--color-light-coral);
     }
 
     /* Hide the burger menu icon on desktop */
