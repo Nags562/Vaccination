@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony Clinic - HPV Vaccination Initiative</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Harmony Clinic - HPV Vaccination</title>
+    <!-- Add your CSS links here -->
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="./css/FAQs.css">
+</head>
 <body>
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="header-mobile-left">
-                <div class="logo">
-                    <span> &#9733; Harmony Clinic</span>
-                </div>
-            </div>
-
-            <nav class="main-nav">
-                <button class="burger-menu-icon" aria-label="Toggle navigation">
+            <nav class="desktop-nav">
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#doctors">Our Doctors</a>
+                <a href="#home" class="logo">
                     <span></span>
-                    <span></span>
-                    <span></span>
+                    <span>Harmony Clinic</span>
+                </a>
+                <button class="btn book-appointment-btn">
+                    Book an appointment
                 </button>
                 <ul class="nav-links">
                     <li><a href="#hero-section">Home</a></li>
@@ -33,18 +35,23 @@
                 </ul>
             </nav>
 
-            <div class="header-desktop-center">
-                <div class="logo">
-                    <span> &#9733; Harmony Clinic</span>
-                </div>
-            </div>
-            <div class="header-desktop-right">
-                <div class="contact-info">
-                    <span><i class="icon-phone"></i> +(256) 78123193</span>
-                    <button class="btn btn-primary">Book an appointment</button>
-                </div>
-            </div>
+            <button id="mobile-menu-button" class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+
+        <nav id="mobile-menu-overlay" class="mobile-menu-overlay">
+            <a href="#home" data-close-menu>Home</a>
+            <a href="#how-it-works" data-close-menu>How It Works</a>
+            <a href="#doctors" data-close-menu>Our Doctors</a>
+            <a href="#vaccines" data-close-menu>Vaccines</a>
+            <a href="#faqs" data-close-menu>FAQs</a>
+            <button class="btn book-appointment-btn" data-close-menu>
+                Book an appointment
+            </button>
+        </nav>
     </header>
 
     <main>
@@ -56,24 +63,176 @@
                     <span class="highlight-line-two"> Healthier Future</span>
                 </h1>
                 <p class="hero-description">The HPV vaccine is a safe and effective way to prevent certain types of cancer before they start. Protect yourself and the people you care about—because prevention is power</p>
-
-                <div class="main-hero-image-container">
-                    <img src="https://img.freepik.com/free-photo/beautiful-stylish-woman-with-protea-flower-concept-style-femininity_169016-59503.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Woman with flowers">
-                    <div class="image-overlay-content">
-                        <div class="testimonial-avatars">
-                            <img src="https://img.freepik.com/premium-photo/face-woman-smelling-rose-studio-background-valentines-day-fragrance-model-profile-young-indian-girl-with-flower-hand-romance-scent-love-pink-backdrop_590464-203119.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
-                            <img src="https://img.freepik.com/premium-photo/close-up-woman-holding-flower_1048944-12976293.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
-                            <img src="https://img.freepik.com/premium-photo/close-up-portrait-woman-with-pink-flower-bouquet_1048944-30598487.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
-                            <img src="https://img.freepik.com/free-photo/attractive-ethnic-woman-covering-eye-with-flower_23-2148105349.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
-                        </div>
-                        <p>More than 1,000 <br> women trust us.</p>
-                    </div>
-                </div>
-                <button class="btn btn-primary cta-btn-image">Book an appointment</button>
-            </div>
+        <!--sections assigned -->
+        <section id="home" class="hero-section">
+            <!-- Octa Home section -->
         </section>
 
+        <section id="how-it-works" class="steps-section">
+            <!-- Octa How It Works section -->
+        </section>
+
+        <section id="doctors" class="doctors-section">
+            <!-- Octa Doctors section -->
+        </section>
+
+        <section id="vaccines" class="vaccines-section">
+            <!-- Prisca Vaccines section -->
+        </section>
+
+        <section id="faqs" class="faq-section">
+            <!-- Kevina FAQs section -->
+           
+                <section class="parent">
+                  <section class="message">
+                    <header>
+                      <h1>HPV vaccine <strong>- your Questions, Answered</strong></h1>
+                    </header>
+                    <p class="info">
+                      Clear,Simple answers to help you feel confident and informed before
+                      getting vaccinated
+                    </p>
+                  </section>
+                  <aside class="details">
+                    <section class="opentab">
+                      <div class="image">
+                        <img src="./assets/media/images/FAQs/Pink.jpeg" alt="Woman in pink" />
+                      </div>
+                      
+                      <div>
+                        <h6>Do I need the vaccine if I`m active?</h6>
+                        <p class="text">Yes-it can still protect you from HPV types you haven`t encounted</p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 10.828l-4.95 4.95l-1.414-1.414L12 8l6.364 6.364l-1.414 1.414z"
+                        />
+                      </svg>
+                    </section>
+                    <section class="articles">
+                      <article class="arti">
+                        <p>What`s the best age to get vaccinated?</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                          />
+                        </svg>
+                      </article>
+                      <article class="arti">
+                          <p>How many doses are needed?</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                            />
+                          </svg>
+                        </article>
+                        <article class="arti">
+                          <p>Are there side effects?</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                            />
+                          </svg>
+                        </article>
+                        <article class="arti">
+                          <p>Gardasil or Cervarix-which one?</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                            />
+                          </svg>
+                        </article>
+                    </section>
+                  </aside>
+                </section>
+                <section class="secondparent">
+                  <aside class="bottomaside">
+                    <section class="sized">
+                      <div class="image" id="picture">
+                        <img id="pic" src="./assets/media/images/FAQs/mom&D.jpeg" alt="mom and daughter with flowers">
+                      </div>
+                     
+                      <!-- <div class="btn">
+                        <button>Book an appointment</button>
+                      </div>
+                       <div class="opec">
+                        <p class="number">1</p>
+                        <p>Quick vaccination- <br> lifetime protection</p>
+                       </div> -->
+                    </section>
+                    <section class="reach">
+                      <div>
+                        <p class="head">medical inquires</p>
+                        <p class="contact">contact@harmonyclinic.or <br> +1(555)123-4567</p>
+                      </div>
+                      <div>
+                        <p class="head">careers & HR</p>
+                        <p class="contact">hr@harmonyclinic.or</p>
+                      </div>
+                      <div>
+                        <p class="head">medical partnerships</p>
+                        <p class="contact">j.taylor@harmonyclinic.or <br> +12135557644</p>
+                      </div>
+                      <div>
+                        <p class="head">Clinic address</p>
+                        <p class="contact">j.taylor@harmonyclinic.or <br> +12135557644</p>
+                      </div>
+                    </section>
+                  </aside>
+                  <section class="contactus">
+                    <h1>Contact US</h1>
+                    <p>Get in touch with us for consultation, appoinment, shedules or any inquires about our services.</p>
+                    <ul class="listone">
+                      <li>Home</li>
+                      <li>How it works</li>
+                      <li>Our doctors</li>
+                      <li>Vaccines</li>
+                      <li>FAQ</li>
+                    </ul>
+                    <ul class="listtwo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ">
+                      <li>Instagram</li>
+                      <li>Whatsapp</li>
+                      <li>YouTube</li>
+                      <li>Twitter</li>
+                    </ul>
+                    <footer>&copy;Harmony Clinic All rights reserved privacy protected.End</footer>
+                  </section>
+                  
+                </section>
+            
+        </section>
     </main>
-    <script src="./js/home.js"></script>
+
+    <!-- Add your JavaScript links here -->
 </body>
 </html>
