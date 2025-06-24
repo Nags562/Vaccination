@@ -1,0 +1,41 @@
+body {
+  font-size: 10x;
+  /* display: inline-block;
+  display: flex;*/
+}
+
+.section-row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.left-box,
+.right-box{
+    flex:1
+}
+
+.About {
+  text-align: center;
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+}
+
+.PC .Prevention .Medics foto {
+  display: flex;
+}
+.PC {
+  text-align: right;
+}
+.Prevention {
+  text-align: left;
+}
+.Medics foto {
+  align-content: center;
+}
