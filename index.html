@@ -79,41 +79,28 @@
                       <div class="image">
                         <img src="./assets/media/images/FAQs/Pink.jpeg" alt="Woman in pink" />
                       </div>
-                      
-                      <div>
-                        <h6>Do I need the vaccine if I`m active?</h6>
-                        <p class="text">Yes-it can still protect you from HPV types you haven`t encounted</p>
-                      </div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="m12 10.828l-4.95 4.95l-1.414-1.414L12 8l6.364 6.364l-1.414 1.414z"
-                        />
-                      </svg>
-                    </section>
-                    <section class="articles">
                       <article class="arti">
-                        <p>What`s the best age to get vaccinated?</p>
+                        <div>
+                          <h6>Do I need the vaccine if I`m active?</h6>
+                          <p class="text" id="toggleup">Yes-it can still protect you from HPV types you haven`t encounted</p>
+                        </div>
                         <svg
+                          class="toggle togg"
+                          id="toggleup"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
                         >
-                          <path
+                          <path 
+  
                             fill="currentColor"
-                            d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                            d="m12 10.828l-4.95 4.95l-1.414-1.414L12 8l6.364 6.364l-1.414 1.414z"
                           />
                         </svg>
-                      </article>
-                      <article class="arti">
-                          <p>How many doses are needed?</p>
-                          <svg
+                        <svg 
+                           class="toggle"
+                           id="toggledown"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -124,10 +111,63 @@
                               d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
                             />
                           </svg>
+                      </section>
+                      <section class="articles">
+                        <article class="arti">
+                          <div>
+                            <p>What`s the best age to get vaccinated?</p>
+                            <p class="text" >Yes-it can still protect you from HPV types you haven`t encounted</p>
+                          </div>
+                         
+                          <svg
+                            class="toggle toggledown"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                            />
+                          </svg>
+                          <svg
+                          class="toggle toggleup"
+                          id="toggleup"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path 
+  
+                            fill="currentColor"
+                            d="m12 10.828l-4.95 4.95l-1.414-1.414L12 8l6.364 6.364l-1.414 1.414z"
+                          />
+                        </svg>
+
+                        </article>
+                        <article class="arti">
+                            <p>How many doses are needed?</p>
+                            <svg
+                              class="toggle"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
+                              />
+                            </svg>
+                      </article>
+                      
                         </article>
                         <article class="arti">
                           <p>Are there side effects?</p>
                           <svg
+                            class="toggle"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -142,6 +182,7 @@
                         <article class="arti">
                           <p>Gardasil or Cervarix-which one?</p>
                           <svg
+                            class="toggle"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -213,6 +254,7 @@
             
         </section>
     </main>
+    <script src="./js/FAQs.js"></script>
 
     <!-- Add your JavaScript links here -->
 </body>

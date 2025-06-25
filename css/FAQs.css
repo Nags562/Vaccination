@@ -60,8 +60,19 @@ h6{
 }
 .text{
     font-size:15px;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: black;
+    display: none;
     
+}
+
+.toggle{
+    color:grey;
+    cursor: pointer;
+}
+
+.toggleup{
+   display: none;
 }
 
 .articles{
@@ -201,12 +212,15 @@ footer{
       }
 
       .opentab{
+        /* height: auto; */
         display: flex;
         background-color: #EF6B6E;
         border-radius: 15px;
         padding: 4px;
         gap: 4px;
     }
+
+    
 
     img{
         width:100%;
