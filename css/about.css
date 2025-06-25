@@ -1,27 +1,26 @@
 body {
   font-size: 10x;
-  /* display: inline-block;
-  display: flex;*/
 }
 
-.section-row{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.section-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .left-box,
-.right-box{
-    flex:1
+.right-box {
+  flex: 1;
 }
 
 .About {
   text-align: center;
 }
-.Icon{
+.Icon {
   display: flex;
   position: relative;
   margin-bottom: var(--spacing-xl);
@@ -29,9 +28,8 @@ body {
   overflow: hidden;
 }
 .Icon img {
-  height: 300px;
-  width: 300px;
-
+  height: 50px;
+  width: 50px;
 }
 
 .PC .Prevention .Medics foto {
@@ -43,8 +41,11 @@ body {
 .Prevention {
   text-align: left;
 }
-.Medics-foto img{
+.Medics-foto img {
   align-content: center;
   height: 300px;
   width: 300px;
+}
+.HV {
+  text-align: center;
 }
