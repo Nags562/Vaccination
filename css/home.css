@@ -340,3 +340,98 @@ h1{
         height: 20px;
     }
 }
+
+.cards-below-hero-image {
+    display: flex;
+    flex-direction: row; /* Side-by-side on mobile */
+    gap: var(--spacing-sm);
+    justify-content: center; 
+    width: 100%; 
+    padding: 0 var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.info-card, .stat-card {
+    padding: var(--spacing-md); 
+    border-radius: var(--border-radius-md);
+    width: calc(50% - var(--spacing-xs)); /* Two columns with gap */
+    max-width: 170px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.grandma-girl-card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    gap: 0;
+    text-align: left;
+    padding: 0; 
+}
+
+.grandma-girl-card img {
+    width: 100%; 
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    object-fit: cover;
+    aspect-ratio: 1 / 1; 
+    display: block; 
+}
+
+.info-overlay-card {
+    position: absolute;
+    bottom: var(--spacing-sm); 
+    left: var(--spacing-lx); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm); 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+    width: calc(100% - (2 * var(--spacing-lg))); 
+}
+
+.info-overlay-card p {
+    margin: 0; 
+    color: var(--color-dune);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2; 
+}
+
+.stat-card {
+    text-align: center;
+    background-color: var(--color-concrete); 
+    padding: var(--spacing-sm);
+    height: fit-content;
+}
+
+.stat-card .percentage {
+    font-family: var(--font-calibre);
+    font-size: 20px;
+    color: var(--color-light-coral);
+    font-weight: 700;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-card p {
+    color: var(--color-gray-text);
+    font-size: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+/* --- Desktop Media Queries --- */
+@media (min-width: 768px) {
+    .cards-below-hero-image-mobile {
+        display: none;
+    }
+    .grandma-girl-card, .stat-86-percent {
+        position: static;
+    }
+    
+    .info-overlay-card {
+        display: none;
+    }
+}
