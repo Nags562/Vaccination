@@ -18,6 +18,7 @@ body{
     justify-content: space-between;
     margin: 10px;
     overflow-x: hidden;
+    /* border: 2px solid blue; */
 }
 
 .message{
@@ -38,7 +39,7 @@ h1{
 }
 
 .image{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,6 +51,7 @@ img{
     height: 80px;
     border-radius: 10px;
     margin: 2px;
+    
 }
 
 h6{
@@ -80,6 +82,7 @@ h6{
 
 .secondparent{
  background-color: #F1F1F1;
+ /* border: 2px solid pink; */
  
 }
 
@@ -88,7 +91,7 @@ h6{
         height:200px;
         border-radius: 10px;
         margin: 2px;
-      
+        /* border: 2px solid green; */
     }
 
     
@@ -140,6 +143,7 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* border: 2px solid red; */
+    
 }
 
 .head{
@@ -149,6 +153,7 @@ button{
 
 .contact{
     font-size: 12px;
+    font-weight: bold;
    
 }
 
@@ -219,10 +224,11 @@ footer{
     }
 
     .bottomaside{
-        width: 50%;
+        width: 30%;
         /* border: 2px blue solid; */
         display: flex;
         flex-direction: column-reverse;
+        /* border: 2px solid black; */
        
      }
 
