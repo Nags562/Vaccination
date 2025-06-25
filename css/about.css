@@ -21,10 +21,17 @@ body {
 .About {
   text-align: center;
 }
+.Icon{
+  display: flex;
+  position: relative;
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+.Icon img {
+  height: 300px;
+  width: 300px;
 
-.img {
-  height: 200px;
-  width: 200px;
 }
 
 .PC .Prevention .Medics foto {
@@ -36,6 +43,8 @@ body {
 .Prevention {
   text-align: left;
 }
-.Medics foto {
+.Medics-foto img{
   align-content: center;
+  height: 300px;
+  width: 300px;
 }

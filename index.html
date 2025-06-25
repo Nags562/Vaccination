@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony Clinic - HPV Vaccination</title>
-    <!-- Add your CSS links here -->
-     <link rel="stylesheet" href="css/main.css">
-     <link rel="stylesheet" href="./css/FAQs.css">
+    <title>Harmony Clinic - HPV Vaccination Initiative</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav class="desktop-nav">
-                <a href="#home">Home</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#doctors">Our Doctors</a>
-                <a href="#home" class="logo">
+            <div class="header-mobile-left">
+                <div class="logo">
+                    <span> &#9733; Harmony Clinic</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <button class="burger-menu-icon" aria-label="Toggle navigation">
                     <span></span>
-                    <span>Harmony Clinic</span>
-                </a>
-                <button class="btn book-appointment-btn">
-                    Book an appointment
+                    <span></span>
+                    <span></span>
                 </button>
                 <ul class="nav-links">
                     <li><a href="#hero-section">Home</a></li>
                     <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#ourdoctors">Our Doctors</a></li>
+                    <li><a href="#doctors">Our Doctors</a></li>
                     <li><a href="#vaccines">Vaccines</a></li>
                     <li><a href="#faqs">FAQ</a></li>
                     <li class="nav-contact-info-mobile">
@@ -35,23 +34,18 @@
                 </ul>
             </nav>
 
-            <button id="mobile-menu-button" class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-desktop-center">
+                <div class="logo">
+                    <span> &#9733; Harmony Clinic</span>
+                </div>
+            </div>
+            <div class="header-desktop-right">
+                <div class="contact-info">
+                    <span><i class="icon-phone"></i> +(256) 78123193</span>
+                    <button class="btn btn-primary">Book an appointment</button>
+                </div>
+            </div>
         </div>
-
-        <nav id="mobile-menu-overlay" class="mobile-menu-overlay">
-            <a href="#home" data-close-menu>Home</a>
-            <a href="#how-it-works" data-close-menu>How It Works</a>
-            <a href="#doctors" data-close-menu>Our Doctors</a>
-            <a href="#vaccines" data-close-menu>Vaccines</a>
-            <a href="#faqs" data-close-menu>FAQs</a>
-            <button class="btn book-appointment-btn" data-close-menu>
-                Book an appointment
-            </button>
-        </nav>
     </header>
 
     <main>
@@ -63,21 +57,83 @@
                     <span class="highlight-line-two"> Healthier Future</span>
                 </h1>
                 <p class="hero-description">The HPV vaccine is a safe and effective way to prevent certain types of cancer before they start. Protect yourself and the people you care about—because prevention is power</p>
-        <!--sections assigned -->
-        <section id="home" class="hero-section">
-            <!-- Octa Home section -->
+                <div class="main-hero-image-container">
+                    <svg viewBox="0 0 600 400" class="hero-svg">
+                        <defs>
+                            <pattern id="imagePattern" patternUnits="userSpaceOnUse" width="600" height="400">
+                                <image href="https://img.freepik.com/free-photo/beautiful-stylish-woman-with-protea-flower-concept-style-femininity_169016-59503.jpg?uid=R205023604&semt=ais_hybrid&w=740" width="600" height="400" preserveAspectRatio="xMidYMid slice"/>
+                            </pattern>
+                        </defs>
+                        <path d="M 25 0 
+                                 L 510 0 
+                                 Q 600 0 600 90
+                                 L 600 300 
+                                 Q 600 400 510 400
+                                 L 230 400 
+                                 Q 220 400 220 390
+                                 L 220 300
+                                 Q 220 290 210 290
+                                 L 25 290
+                                 Q 0 290 0 265
+                                 L 0 25 
+                                 Q 0 0 25 0 Z" 
+                              fill="url(#imagePattern)"/>
+                    </svg>
+                    <div class="image-overlay-content">
+                        <div class="testimonial-avatars">
+                            <img src="https://img.freepik.com/premium-photo/face-woman-smelling-rose-studio-background-valentines-day-fragrance-model-profile-young-indian-girl-with-flower-hand-romance-scent-love-pink-backdrop_590464-203119.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                            <img src="https://img.freepik.com/premium-photo/close-up-woman-holding-flower_1048944-12976293.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                            <img src="https://img.freepik.com/premium-photo/close-up-portrait-woman-with-pink-flower-bouquet_1048944-30598487.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                            <img src="https://img.freepik.com/free-photo/attractive-ethnic-woman-covering-eye-with-flower_23-2148105349.jpg?uid=R205023604&semt=ais_hybrid&w=740" alt="Avatar">
+                        </div>
+                        <p>More than 1,000 <br> women trust us.</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary cta-btn-image">Book an appointment</button>
+            </div>
         </section>
-
-        <section id="how-it-works" class="steps-section">
-            <!-- Octa How It Works section -->
+        <section id="how-it-works" class="how-it-works-section">
+            <!-- Octa Doctors section -->
         </section>
 
         <section id="doctors" class="doctors-section">
-            <!-- Octa Doctors section -->
+            <!-- Brittany's Doctors section -->
         </section>
 
         <section id="vaccines" class="vaccines-section">
             <!-- Prisca Vaccines section -->
+            <div class="About">
+                <h1>About</h1>
+                <h2>Harmony Clinic</h2>
+                <p>We make HPV protection simple, clear, and personal. <br> From expert advice to tailored care - you're fully supported</p>
+            </div>
+        
+            <div class="section-row">
+                <div class="right-box">
+                     <section class="PC">
+                         <h4>Personalised care</h4>
+                         <p>Vaccination plans tailored to your health history, age, and <br> needs. Focused on comfort, safety, and results - never <br> one-size-fits-all.</p>
+                         <h4>Trusted guidance</h4>
+                         <p>Clear, step-by-step suppport from consultation to follow- <br> up. Our doctors are here to guide and answer every question.</p>
+                    </section>
+
+                     <div class="Icon">
+                         <img src="./assets/media/images/vaccine/view-3d-cinema-clapperboard.jpg" alt="">
+                         <p> See video, 40s</p>
+                     </div>
+                </div>
+            </div>
+            <div class="Medics-foto">
+                <img src="./assets/media/images/vaccine/nurse-doctor-team-ready-work-day.jpg" alt="">
+            </div>
+            
+            <div class="left-box">
+              <section class="Prevention">
+                 <h4>Prevention that works</h4>
+                 <p>Protects against 6 types of HPV-related cancer. Most <br> affective before exposure - early protection means <br> long - term peace of mind.</p>
+                 <h4>Easy access & affordability</h4>
+                 <p>Flexible hours, convenient locations and transparent <br> pricing. Quality care that fits your schedule and your <br> budget</p>
+            </div>
         </section>
 
         <section id="faqs" class="faq-section">
