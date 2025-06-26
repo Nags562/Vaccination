@@ -47,21 +47,7 @@ a:hover {
     border-radius: var(--border-radius-sm);
     text-align: center;
     font-weight: 700;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary {
-    background-color: var(--color-light-coral);
-    color: var(--color-white);
-}
-
-.btn-primary:hover {
-    background-color: var(--color-light-coral);
-}
-
-.highlight {
-    color: var(--color-light-coral);
-    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 /* Media Query for larger screens */
