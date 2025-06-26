@@ -21,31 +21,49 @@ body {
   text-align: center;
 }
 .Icon {
-  display: flex;
+ /* display: flex;
   position: relative;
   margin-bottom: var(--spacing-xl);
   border-radius: var(--border-radius-md);
-  overflow: hidden;
+  overflow: hidden; */
+object-position: left;
 }
 .Icon img {
   height: 50px;
   width: 50px;
+  object-position: left;
 }
 
-.PC .Prevention .Medics foto {
+/*.PC,
+.Prevention,
+.Medics foto {
   display: flex;
-}
+}*/
 .PC {
-  text-align: right;
-}
-.Prevention {
   text-align: left;
 }
-.Medics-foto img {
+.Prevention {
+  text-align: right;
+  
+}
+/*.Medics-foto*/
+img {
   align-content: center;
-  height: 300px;
-  width: 300px;
+  /*height: 100px;
+  width: 100px;*/
+
+  padding-left: 500px;
+  padding-right: 600px;
 }
 .HV {
   text-align: center;
+}
+
+.Cx {
+  text-align: right;
+}
+
+.section-row {
+  display: inline-block;
+  justify-content: space-between;
 }
