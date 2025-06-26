@@ -1,0 +1,51 @@
+body {
+  font-size: 10x;
+}
+
+.section-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.left-box,
+.right-box {
+  flex: 1;
+}
+
+.About {
+  text-align: center;
+}
+.Icon {
+  display: flex;
+  position: relative;
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+.Icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.PC .Prevention .Medics foto {
+  display: flex;
+}
+.PC {
+  text-align: right;
+}
+.Prevention {
+  text-align: left;
+}
+.Medics-foto img {
+  align-content: center;
+  height: 300px;
+  width: 300px;
+}
+.HV {
+  text-align: center;
+}
