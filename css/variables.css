@@ -15,6 +15,7 @@
     --font-urbanist: 'Urbanist', sans-serif;
 
     /* Spacing */
+    --spacing-sx: 0.1rem;
     --spacing-xs: 0.2rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
