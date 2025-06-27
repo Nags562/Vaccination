@@ -1,6 +1,6 @@
 body{
    
-    background-color:#FFFFFF;
+    background-color:var(--color-white);
     
 }
 .main{
@@ -33,7 +33,7 @@ h1{
 }
 .opentab{
    
-    background-color: #EF6B6E;
+    background-color: var(--color-light-coral);
     border-radius: 15px;
     padding: 4px;
 }
