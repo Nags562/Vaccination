@@ -1,6 +1,6 @@
 body{
    
-    background-color:#FFFFFF;
+    background-color:var(--color-white);
     
 }
 .main{
@@ -33,7 +33,7 @@ h1{
 }
 .opentab{
    
-    background-color: #EF6B6E;
+    background-color: var(--color-light-coral);
     border-radius: 15px;
     padding: 4px;
 }
@@ -58,12 +58,16 @@ h6{
     color: #FFFFFF;
     font-size:18px;
 }
+
 .text{
-    font-size:15px;
-    /* color: #FFFFFF; */
+    font-size:10px;
     color: black;
-    display: none;
+    /* display: none; */
     
+}
+
+.hidden{
+    display: none;
 }
 
 .toggle{
@@ -71,14 +75,15 @@ h6{
     cursor: pointer;
 }
 
-.toggleup{
+/* .open{
    display: none;
-}
+} */
 
 .articles{
     display: flex;
     flex-direction: column;
 }
+
 
 .arti{
     background-color:#F1F1F1;
@@ -211,14 +216,14 @@ footer{
         width: 50%;
       }
 
-      .opentab{
-        /* height: auto; */
+      /* .opentab{
+        height: auto; 
         display: flex;
         background-color: #EF6B6E;
         border-radius: 15px;
         padding: 4px;
         gap: 4px;
-    }
+    } */
 
     
 
