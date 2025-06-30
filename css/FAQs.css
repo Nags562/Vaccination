@@ -33,8 +33,7 @@ h1{
     color: var(--color-gray-text);
 }
 .opentab{
-   
-    background-color:var(--color-light-coral);
+    background-color: var(--color-light-coral);
     border-radius: 15px;
     padding: 4px;
 }
@@ -63,7 +62,6 @@ h6{
 .text{
     font-size:10px;
     color: var(--color-dune);
-   
     
 }
 
@@ -76,7 +74,9 @@ h6{
     cursor: pointer;
 }
 
-
+/* .open{
+   display: none;
+} */
 
 .articles{
     display: flex;
@@ -216,8 +216,17 @@ footer{
       }
 
       .details{
-        width: 30%;
-     }
+        width: 50%;
+      }
+
+       .opentab{
+        : auto; 
+        display: flex;
+        background-color: #EF6B6E;
+        border-radius: 15px;
+        padding: 4px;
+        gap: 4px;
+    } 
 
    
     img{
