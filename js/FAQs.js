@@ -1,22 +1,3 @@
-// const close = document.getElementById("close");
-// const open = document.getElementById("open");
-// const text = document.getElementById("text");
-// const article = document.getElementById("article");
-
-// close.addEventListener("click", function () {
-//   open.classList.remove("hidden");
-//   text.classList.remove("hidden");
-//   close.classList.add("hidden");
-//   article.style.backgroundColor = "#EF6B6E";
-// });
-
-// open.addEventListener("click", function () {
-//   close.classList.remove("hidden");
-//   text.classList.add("hidden");
-//   open.classList.add("hidden");
-//   article.style.backgroundColor = "#F1F1F1";
-// });
-
 const articles = document.querySelectorAll(".arti");
 
 articles.forEach(article => {
@@ -38,7 +19,7 @@ articles.forEach(article => {
     article.style.backgroundColor = coral;
     qa.style.color = white;
     text.style.color = white;
-    // svg.forEach(svg => svg.style.color = "FFFFFF");
+    // svg.forEach(svg => svg.style.color = "FFFFFF"); 
   });
 
   open.addEventListener("click", () => {
