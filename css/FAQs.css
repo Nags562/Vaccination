@@ -1,18 +1,16 @@
-body{
-   
-    background-color:var(--color-white);
-    
-}
-.main{
+
+/* .main{
     width: 100vw;
     height: 100vh;
     margin: 4px;
     overflow-x: hidden;
-}
+    border: 2px solid red;
+} */
   .faq-section{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    
 }  
 
 .parent{
@@ -20,24 +18,28 @@ body{
     width: screen;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
-    overflow-x: hidden;
+    /* justify-content: space-between; */
+    
   
     
 }
 
 .message{
     text-align: center;
+   
 }
+
 h1{
     font-size: 22px;
     color: black;
+    
+
 }
 
 .info{
     font-size: 10px;
     color: var(--color-gray-text);
+    
 }
 
 .opentab{
@@ -112,6 +114,7 @@ h6{
 .secondparent{
  background-color:var( --color-concrete);
  border-radius:  12px;
+ padding: 10px;
  
 }
 
@@ -125,7 +128,7 @@ h6{
     } */
 
     
-.btn{
+/* .btn{
     width:55% ;
     background-color: var( --color-white);
     align-items: center;
@@ -136,9 +139,9 @@ h6{
    
    
 
-}
+} */
 
-button{
+/* button{
     width: 100%;
     background-color:var(--color-light-coral);
     color: var( --color-white);
@@ -147,9 +150,9 @@ button{
     font-size: 15px;
     border-radius:8px;
     
-}
+} */
 
-.opec{
+/* .opec{
     width:55% ;
     height: 10%;
     background-color:var(--color-dune);
@@ -161,13 +164,13 @@ button{
     gap: 2px;
     color: var( --color-white);
     
-}
+} */
 
-.number{
+/* .number{
 
     font-size: 24px;
     font-weight: bold;
-}
+} */
 
 .reach{
     display: grid;
@@ -177,8 +180,12 @@ button{
 }
 
 .head{
-   
-    font-size: 10px;
+   font-size: 10px;
+   color: var(--color-gray-text);
+}
+
+.open{
+    color: var(--color-white);
 }
 
 .contact{
@@ -210,6 +217,7 @@ footer{
 }
 
 
+
 @media  (min-width:1280px){
         .parent{
             
@@ -230,6 +238,9 @@ footer{
         width: 30%;
      }
 
+      .us{
+         text-align: start;
+      }
    
     /* img{
         width:100%; 
@@ -242,11 +253,13 @@ footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin: 10px;
-        padding: 6px;
+        padding: 20px;
+        
     }
 
-    
+    .info{
+        text-align: start;
+    }
     
 
     .bottomaside{
